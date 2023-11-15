@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<title> Projet 3 </title>
+		<script src="https://kit.fontawesome.com/16f6d7b24c.js" crossorigin="anonymous"></script>
+		<link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
+   integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+   crossorigin=""/>
+   		<link rel="stylesheet" type="text/css" href="./css/style.css">
+   		
+
+
+	</head>
+
+
+	<body>
+		<div id="slider">
+			<div id="box">
+				<img id="sliderimage" src="img/etape1.png">
+			</div>
+			<button id="previous"><i class="fas fa-backward"></i></button>
+			<button id="next"><i class="fas fa-forward"></i></button>
+			<button id="pause"><i id="pausebutton" class="far fa-pause-circle"></i></button>
+		</div>
+
+		<section id="container_map">
+			<div id="map"></div>
+			<div id="information">
+				<h1>Information de la station</h1>
+					<ul>
+						<li><div>Nom de la station: </div>
+							<div id="name_station"></div>
+						</li>
+						<li>
+							<div>Adresses: </div>
+							<div id="address"></div>
+						</li>	
+						<li><div>Places: </div>
+							<div id="slot"></div> 
+						</li>
+						<li><div>Vélo disponible:</div>
+							<div id="bikes"></div> 
+						</li>
+
+					</ul>
+
+					<button id="reservation" value="afficher">Réserver</button>
+			</div>
+		</section>
+
+			<form id="formulaire" onsubmit="return false">
+				<input type="text" name="surname" placeholder="votre prénom" id="surname">
+				<input type="text" name="name" placeholder="votre nom" id="name">
+				<button id="continuer">Continuer</button>
+			</form>
+			
+			<div id="canvas_signature">
+				<canvas id="signatureCheck" width="300" height="200"></canvas>
+				<canvas id="signature" width="300" height="200">Problème d'affichage veuillez raffraichir la page.</canvas>
+				<input id="clear" type="reset" value="effacer">
+				<input id="submit" type="button" value="reserver"> 
+			</div>
+			<div id="valid_newreserv">Voulez vous supprimer cette réservation pour en creer une autre ?<br>
+			<button id="oui">oui</button><button id="non">non</button></div>
+
+			<div id="resume"><p>Nom:<div id="resumename"></div></p><p>Prénom:<div id="resumesurname"></div></p><p>vélo réservé à la station:<div id="resumebikes"></div> </p><p>votre réservation se termine dans:<div id="countdown">...</div> </p><div id="reservation_end">Réservation terminée</div><button id="new_reservation">nouvelle réservation</button></div> 
+
+		<script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"
+  		 integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=="
+   		crossorigin=""></script>
+
+   		<script type="text/javascript" src="./js/slider.js" async></script>
+		<script type="text/javascript" src="./js/ajax.js" async></script>
+		<script type="text/javascript" src="./js/timer.js" async></script>
+		<script type="text/javascript" src="./js/map.js" async></script>
+		<script type="text/javascript" src="./js/canvas.js" async></script>
+		<script type="text/javascript" src="./js/main.js" async></script>
+	</body>
+</html>
+
+

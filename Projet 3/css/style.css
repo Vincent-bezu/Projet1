@@ -1,0 +1,325 @@
+body, html {
+	margin: 0;
+	padding: 0;
+	min-height: 100%;
+	overflow-x: hidden;
+}
+
+body{
+	font-family: sans-serif;
+	padding: 50px;
+    background: linear-gradient(45deg, rgba(58,198,36,1) 36%, rgba(255,55,0,0.8407738095238095) 88%);
+    line-height: 1.4;
+}
+
+img {
+	width: 100%;
+	height: 550px;
+}
+
+#slider{
+	width: 1000px;
+	height: 550px;
+	margin: 20px auto;
+	position: relative;
+	border: 10px solid darkgrey;
+	box-shadow: 0px 0px 5px 2px #ccc;
+}
+
+#previous, #next{
+	padding: 20px;
+	border: none;
+	background: rgba(255,55,0,0.8407738095238095);
+	
+	color: white;
+	position: absolute;
+	cursor: pointer;
+}
+
+#play, #pause{
+	padding: 15px;
+	border: none;
+	background: rgba(255,55,0,0.8407738095238095);
+	font-size: 30px;
+	color: white;
+	position: absolute;
+	cursor: pointer;
+
+}
+
+#next{
+	border-radius: 10px 0px 0px 10px;
+	margin-left: 947px;
+	top: 45%;
+}
+
+#previous{
+	border-radius: 0px 10px 10px 0px;
+	top: 45%;
+}
+
+#play{
+	border-radius: 10px 0px 0px 10px;
+	position: absolute;
+	bottom: 0px;
+	left: 430px;
+
+}
+
+#pause{
+	border-radius: 0px 10px 10px 0px;
+	position: absolute;
+	bottom: 0px;
+	left: 520px;
+
+
+}
+
+#map {
+	width: 550px;
+ 	height: 550px;
+ 	position: relative;
+ 	border: solid 9px darkgrey;
+ 	float: left;
+}
+
+#information {
+	width: 550px;
+ 	height: 550px;
+ 	position: relative;
+ 	border: solid 9px darkgrey;
+ 	float: left;
+ 	margin-left: 80px;
+ 	background-color: rgb(255, 255, 255);
+ 	display: none;
+
+}
+
+#container_map {
+	height: 550px;
+ 	width: 1300px;
+}
+
+#information h1{
+	text-align: center;
+	color: rgb(99, 240, 95);
+}
+
+ul li{
+	text-align: center;
+	list-style: none;
+	margin: 10px 0;
+	font-size: 1.2em;
+	font-weight: bold;
+	color: rgb(99, 240, 95);
+
+}
+
+ul{
+	margin-top: 80px;
+	padding-inline-start:0px;
+}
+
+#reservation{
+	width: 150px;
+	height: 50px;
+	border: solid 4px darkgrey;
+	background-color: rgb(99, 240, 95);
+	text-decoration: none;
+	color: rgb(243, 123, 4);
+	font-size: 1.2em;
+	font-weight: bold;
+	align-items: center;
+	display: block;
+	margin: 0 auto;
+	cursor: pointer;
+}
+#valid_newreserv{
+	width: 200px;
+	height: 100px;
+	border: solid 4px darkgrey;
+	background-color: rgb(99, 240, 95);
+	text-decoration: none;
+	color: black;
+	font-size: 1em;
+	font-weight: bold;
+	align-items: center;
+	display: none;
+	margin: 0 auto;
+	
+
+}
+
+#oui{
+	width: 50px;
+	height: 30px;
+	cursor: pointer;
+	margin-left: 20px;
+}
+
+#non{
+	width: 50px;
+	height: 30px;
+	cursor: pointer;
+	margin-left: 20px;
+}
+
+#formulaire{
+	display: none;
+	border: solid 4px darkgrey;
+	align-items: center;
+	margin: 20px auto;
+	width: 550px;
+ 	height: 550px;
+ 	background-color: rgb(255, 255, 255);
+}
+
+#name, #surname{
+	width: 80%;
+	height: 30px;
+	margin-left: 50px;
+	margin-top: 20px;
+	background-color: rgb(99, 240, 95);
+	color: rgb(243, 123, 4);
+	font-size: 1.2em;
+}
+
+#submit{
+	width: 40%;
+	background-color: rgb(99, 240, 95);
+	color: rgb(255, 255, 255);
+	font-weight: bold;
+	font-size: 1em;
+	margin: 20px auto;
+	display: block;
+}
+
+#continuer{
+	width: 40%;
+	background-color: rgb(99, 240, 95);
+	color: rgb(255, 255, 255);
+	font-weight: bold;
+	font-size: 1em;
+	margin: 20px auto;
+	display: block;
+}
+
+canvas{
+	border: solid 4px darkgrey;
+	display: block;
+	margin: 20px auto;
+}
+
+#canvas_signature{
+	display: none;
+	position: relative;
+	border: solid 4px darkgrey;
+	background-color: rgb(255, 255, 255);
+	width: 550px;
+	height: 450px;
+	margin: 20px auto;
+}
+
+#resume{
+	display: none;
+	width: 550px;
+	height: 600px;
+	border: solid 4px darkgrey;
+	font-size: 1.2em;
+	background-color: rgb(255, 255, 255);
+	color: rgb(99, 240, 95);
+	font-weight: bold;
+	margin: 20px auto;
+	line-height: 5px;
+}
+
+#signatureCheck{
+	display: none;
+	z-index: -5;
+}
+
+#countdown{
+	width: 550px;
+	height: 50px;
+	line-height: 20px;
+	color: black;
+	display: block;
+}
+
+#resume p{
+	line-height: 20px;
+}
+
+#resumebikes{
+	display: inline-block;
+	line-height: 20px;
+}
+
+#reservation_end{
+	color: red;
+	margin: 15px auto;
+	display: none;
+}
+
+#end_timer{
+	margin-top: 15px;
+}
+
+.fa-forward:before, .fa-backward:before{
+	font-size: 1em;
+}
+
+.fa-play-circle:before, .fa-pause-circle:before{
+	font-size: 0.8em;
+}
+
+#resumename, #resumesurname, #resumebikes, #countdown{
+	color: rgba(255,55,0,0.8407738095238095);
+}
+
+#new_reservation{
+	width: 200px;
+	height: 100px;
+	border: solid 4px darkgrey;
+	background-color: rgb(99, 240, 95);
+	text-decoration: none;
+	color: rgb(243, 123, 4);
+	font-size: 1.2em;
+	font-weight: bold;
+	align-items: center;
+	display: block;
+	margin: 0 auto;
+	cursor: pointer;
+}
+
+@media screen and (max-width: 1092px) {
+	#container_map, #information {
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+		height: 100%;
+		align-items: center;
+		margin: 0;
+	}
+
+	#sliderimage{
+		width: 100%;
+		height: 100%;
+	}
+
+	#next{
+	border-radius: 10px 0px 0px 10px;
+	position: relative;
+	right: 360px;
+	bottom: 75px;
+	
+}
+
+	#previous{
+	border-radius: 0px 10px 10px 0px;
+	position: absolute;
+	bottom: 0px;
+	top: 90%;
+	left: 450px;
+}
+	
