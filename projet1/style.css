@@ -1,0 +1,762 @@
+@font-face {
+	font-family: 'robotoblack';
+	src: url('fonts/roboto-black-webfont.eot');
+	src: url('fonts/roboto-black-webfont.eot?#iefix') format('embedded-opentype'),
+		url('fonts/roboto-black-webfont.woff2') format('woff2'),
+		url('fonts/roboto-black-webfont.woff') format('woff'),
+		url('fonts/roboto-black-webfont.ttf') format('truetype'),
+		url('fonts/roboto-black-webfont.svg#robotoblack') format('svg');
+	font-weight: normal;
+	font-style: normal;
+
+}
+
+@font-face {
+	font-family: 'robotobold';
+	src: url('fonts/Roboto-Bold-webfont.eot');
+	src: url('fonts/Roboto-Bold-webfont.eot?#iefix') format('embedded-opentype'),
+		url('fonts/Roboto-Bold-webfont.woff2') format('woff2'),
+		url('fonts/Roboto-Bold-webfont.woff') format('woff'),
+		url('Roboto-Bold-webfont.ttf') format('truetype'),
+		url('fonts/Roboto-Bold-webfont.svg#robotobold') format('svg');
+	font-weight: normal;
+	font-style: normal;
+
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	font-family: 'roboto', sans-serif;
+	width: 100%;
+}
+
+h2 {
+	text-align: center;
+	font-size: 48px;
+}
+
+.paragraphe {
+	text-align: center;
+	width: 100%;
+}
+
+header {
+	height: 100px;
+}
+
+/* barre de nav */
+nav {
+	position: fixed;
+	width: 100%;
+	background-color: rgb(255, 255, 255);
+	z-index: 25;
+}
+
+nav ul {
+	padding-bottom: 15px;
+	text-align: center;
+	float: right;
+	margin-right: 80px;
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+nav ul li {
+	display: inline-block;
+	padding: 20px;
+}
+
+nav ul li a {
+	text-decoration: none;
+	color: gray;
+	font-size: 16px;
+}
+
+.menu a:hover {
+	border-top: 2px solid rgb(92, 173, 211);
+	padding-top: 40px;
+}
+
+/* forme accueil statique */
+.accueil {
+	border-top: 2px solid rgb(92, 173, 211);
+	padding-top: 40px;
+}
+
+
+
+/* logo */
+.logo {
+	position: fixed;
+	float: left;
+	margin-left: 80px;
+	padding-top: 15px;
+}
+
+/* Slider*/
+
+#slider {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 522px;
+	background-image: linear-gradient(rgba(0, 0, 0, 0.1),
+			rgba(0, 0, 0, 0.1)), url(images/slider/bg1.jpg);
+	background-position: center;
+}
+
+#titreslider {
+	position: absolute;
+	display: flex;
+	flex-direction: column;
+	top: 250px;
+	left: 80px;
+	height: 100px;
+	width: 600px;
+	z-index: 1;
+	text-transform: uppercase;
+	margin: 0;
+	padding: 0;
+}
+
+#titreslider h1 {
+	font-family: 'robotobold', serif;
+	color: rgb(255, 255, 255);
+	font-size: 38px;
+	line-height: 35px
+}
+
+/* Les flèches du slider */
+
+.flechegauche {
+	display: flex;
+	position: absolute;
+	font-size: 25px;
+	color: rgb(255, 255, 255);
+	left: -50px;
+	top: 350px;
+	width: 60px;
+	height: 60px;
+	border-radius: 50%;
+	background-color: rgba(69, 68, 73, 0.9);
+	align-items: center;
+	justify-content: flex-end;
+	padding: 10px
+}
+
+.flechedroite {
+	font-size: 25px;
+	color: rgb(255, 255, 255);
+	position: absolute;
+	right: 1px;
+	top: 350px;
+	width: 30px;
+	height: 70px;
+	border-top-left-radius: 150px;
+	border-bottom-left-radius: 150px;
+	background-color: rgba(26, 30, 34, 0.7);
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+
+}
+
+/* le mot Webagency en bleu */
+#motbleu {
+	color: rgb(92, 173, 211)
+}
+
+#texteslider {
+	position: absolute;
+	display: flex;
+	flex-direction: column;
+	top: 355px;
+	left: 80px;
+	height: 50px;
+	width: 500px;
+	font-family: 'robotobold', serif;
+	color: rgb(255, 255, 255);
+	font-size: 14px;
+}
+
+#info {
+	position: absolute;
+	display: flex;
+	flex-direction: column;
+	top: 410px;
+	left: 80px;
+	height: 45px;
+	width: 130px;
+	font-family: 'robotobold', serif;
+	color: rgb(255, 255, 255);
+	font-size: 18px;
+	text-align: center;
+	margin: 0;
+	padding: 0;
+	background-color: rgb(92, 173, 211);
+	border-radius: 2px;
+}
+
+#info p {
+	padding: 0;
+	margin-top: 10px;
+}
+/* trait bleu en dessous du slider */
+.bordureslider {
+	position: relative;
+	display: block;
+	width: 150px;
+	height: 3px;
+	background-color: rgb(92, 173, 211);
+	top: 520px;
+}
+
+/* section des services */
+#services {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	display: inline-block;
+}
+
+/* la div du separateur service */
+
+.separator {
+	width: 100%;
+	height: 20px;
+	display: flex;
+	justify-content: center;
+	margin-left: -52px;
+}
+
+.ligne1 {
+	width: 250px;
+	height: 1px;
+	background-color: darkgrey;
+	margin-left: 90px;
+	padding: 0;
+	position: relative;
+	bottom: 20px;
+}
+
+.point {
+	background-color: rgb(92, 173, 211);
+	width: 20px;
+	height: 20px;
+	border-radius: 50px;
+	margin: 0;
+	padding: 0;
+	position: relative;
+	display: flex;
+	flex-direction: row;
+	left: 115px;
+	bottom: 10px;
+	border: 2px solid rgb(255, 255, 255);
+}
+
+/* le texte des services */
+
+
+#bodyserv {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+
+}
+
+/* ordinateur sur la gauche */
+.ordi {
+	width: 40%;
+	top: 40px;
+	left: 90px;
+	position: relative;
+}
+
+/* la liste des services */
+.servicename {
+	width: 40%;
+	margin-right: 100px;
+	margin-top: 100px;
+	position: relative;
+	display: flex;
+	float: right;
+}
+
+.servicename ul li {
+	text-decoration: none;
+	color: gray;
+	font-size: 14px;
+	list-style: none;
+}
+
+.servicename h3 {
+	padding-top: 20px;
+	margin: 0px;
+	font-size: 18px;
+	color: black;
+}
+
+.ux {
+	display: flex;
+	align-items: center;
+}
+
+/* les cercles des sevices */
+.fa {
+
+	font-size: 35px;
+	padding: 0;
+	margin: 0;
+	color: rgb(92, 173, 211);
+}
+
+.cercle {
+	width: 60px;
+	height: 60px;
+	display: flex;
+	position: relative;
+	border-radius: 50%;
+	border: 0.5px solid darkgrey;
+	justify-content: center;
+	align-items: center;
+	margin-right: 20px;
+}
+
+.pointbleu {
+	background-color: rgb(92, 173, 211);
+	width: 10px;
+	height: 10px;
+	border-radius: 50px;
+	border: 3px solid rgb(255, 255, 255);
+	position: absolute;
+	display: flex;
+	flex-direction: row;
+	right: -10px;
+	top: 22px;
+}
+
+
+
+/* les projets */
+
+#nosprojets {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	display: inline-block;
+}
+
+/* barre de nav des projets */
+.menuprojet {
+	
+	margin: 40px 0;
+	display: flex;
+	position: relative;
+	border-radius: 3px;
+	text-align: center;
+	justify-content: center;
+}
+
+.othermenuproject a {
+	text-decoration: none;
+	font-size: 14px;
+	line-height: 2.6;
+	font-family: robotobold, serif;
+	color: rgb(100, 104, 109);
+	display: block;
+	padding: 0 14px;
+}
+
+.othermenuproject {
+	background-color: lightgrey;
+	width: 80px;
+	height: 40px;
+	display: flex;
+	position: relative;
+	justify-content: space-around;
+}
+
+.othermenuproject a:hover {
+	background-color: rgb(92, 173, 211);
+	border-bottom: solid 4px rgb(70, 140, 173);
+	color: rgb(255, 255, 255);
+}
+
+.caretnone {
+	font-size: 23px;
+	display: none;
+	position: absolute;
+	top: 13px;
+	left: 31px;
+	color: rgb(70, 140, 173);
+
+}
+
+a:hover .caretnone {
+	display: block;
+}
+
+
+
+/* allwork en couleur statique */
+.allworks {
+	background-color: rgb(92, 173, 211);
+	width: 80px;
+	display: inline-block;
+	position: relative;
+	color: rgb(255, 255, 255);
+	border-bottom: solid 4px rgb(70, 140, 173);
+}
+
+.allworks a {
+	color: rgb(255, 255, 255);
+	text-decoration: none;
+	font-size: 14px;
+	line-height: 2.5;
+	font-family: 'robotobold', serif;
+	color: rgb(255, 255, 255);
+}
+
+/* petit triangle en dessous de la bordure allwork */
+.caret {
+	font-size: 30px;
+	display: flex;
+	position: absolute;
+	top: 25.2px;
+	left: 31px;
+	color: rgb(70, 140, 173);
+}
+
+/* les exemples */
+.exemple {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	position: relative;
+	width: 100%;
+}
+
+.totalex {
+	display: flex;
+	position: relative;
+	width: 300px;
+	height: 200px;
+	margin: 20px 0;
+}
+
+.totalex img {
+	width: 300px;
+	height: 200px;
+}
+
+.totalex h3 {
+	display: flex;
+	margin-bottom: 5px;
+	margin-left: 10px;
+}
+
+.totalex p {
+	width: 290px;
+	display: flex;
+	margin-bottom: 10px;
+	margin-left: 10px;
+}
+
+.eyes4 {
+	position: absolute;
+	display: flex;
+	justify-content: center;
+	font-size: 13px;
+	color: rgb(255, 255, 255);
+	right: 10px;
+	bottom: 65px;
+	border: solid 2px rgb(255, 255, 255);
+	border-radius: 50px;
+	width: 35px;
+	height: 35px;
+	align-items: center;
+	background-color: rgb(92, 173, 211);
+}
+
+.totalex a {
+	background-color: rgba(26, 30, 34, 0.8);
+	position: absolute;
+	bottom: 0;
+	display: none;
+	color: rgb(255, 255, 255);
+	text-decoration: none;
+}
+
+.totalex:hover a {
+	display: block;
+}
+
+/* la carte */
+#carte {
+	position: relative;
+	height: 600px;
+
+
+}
+
+#filtrebleu {
+	width: 100%;
+	height: 600px;
+	background: rgba(92, 173, 211, 0.3);
+	position: absolute;
+	display: block;
+	top: 0;
+	left: 0;
+
+
+}
+
+#carte iframe {
+
+	height: 600px;
+	width: 100%;
+
+}
+
+/* le formulaire */
+
+input[type=text],
+select,
+textarea {
+	width: 100%;
+	padding: 12px;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	box-sizing: border-box;
+	margin-top: 0px;
+	margin-bottom: 10px;
+	resize: vertical;
+	display: inline-block;
+	position: relative;
+}
+
+textarea {
+	height: 150px
+}
+
+input[type=submit] {
+	background-color: rgb(92, 173, 211);
+	;
+	color: rgb(255, 255, 255);
+	padding: 12px 20px;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+}
+
+.formulaire {
+	position: absolute;
+	width: 250px;
+	border-radius: 5px;
+	background-color: rgba(242, 242, 242, 0.5);
+	top: 60px;
+	right: 60px;
+	border: 20px solid rgba(242, 242, 242, 0.5);
+}
+
+.formulaire h4 {
+	width: 150px;
+	font-size: 24px;
+	margin: 0;
+}
+
+.formulaire p {
+	width: 250px;
+	font-size: 12px;
+	z-index: 3;
+	padding-top: 10px;
+	text-align: left;
+}
+
+@media screen and (max-width: 1092px) {
+	#bodyserv {
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+		align-items: center;
+	}
+
+
+	.ordi {
+		left: 0;
+		top: 0;
+		width: auto;
+
+
+	}
+
+	.servicename {
+		width: 100%;
+		text-align: center;
+		margin-top: 0;
+		margin-right: 0;
+	}
+
+	.servicename ul li {
+		margin-bottom: 50px;
+	}
+
+	.servicename ul {
+		padding: 0;
+	}
+
+	.ux {
+		display: inline-block;
+		width: 100%;
+
+	}
+
+	.cercle {
+		display: inline-block;
+	}
+
+	.fa {
+		margin-top: 10px;
+	}
+
+
+
+}
+
+@media screen and (max-width: 916px){
+	.totalex {
+		width: 50%;
+		justify-content: space-around;
+		
+		
+	}
+}
+
+@media screen and (max-width: 830px) {
+
+	.menu a:hover {
+		border: none;
+	}
+
+	.accueil {
+		border-top: none;
+		padding-top: 0;
+	}
+
+	.menu {
+		display: inline-block;
+		padding: 0;
+		width: 100%;
+	}
+
+	.logo {
+		float: none;
+		position: relative;
+		text-align: center;
+		margin: 0;
+	}
+
+	nav {
+		position: relative;
+	}
+
+	nav ul {
+		float: none;
+		padding-bottom: 0;
+	}
+
+
+	nav a {
+		text-align: center;
+
+	}
+
+	.totalex a {
+		display: block;
+	}
+
+	.paragraphe {
+		padding: 0 10px;
+	}
+
+	.texteservice {
+		padding: 0 15px;
+	}
+
+	.ordi img {
+		max-width: 100%;
+	}
+
+}
+
+@media screen and (max-width: 700px) {
+	#slider {
+		display: none;
+	}
+
+	#services {
+		margin-top: 50px;
+	}
+
+}
+
+@media screen and (max-width: 616px) {
+
+	.exemple {
+		flex-wrap: nowrap;
+		flex-direction: column;
+		align-items: center;
+	}
+}
+
+@media screen and (max-width: 450px) {
+
+	#carte {
+		display: inline-block;
+		width: 100%
+	}
+
+
+	.formulaire {
+		display: inline-block;
+		width: 100%;
+		position: static;
+		margin-top: 40px;
+		border: none;
+	}
+}
+
+@media screen and (max-width: 340px) {
+
+	nav ul {
+		margin: 0;
+		padding: 0;
+	}
+
+	.menuprojet {
+		width: 100%;
+	}
+}
+
+@media screen and (min-width: 1500px){
+	#bodyserv{
+		
+		width: 70%;
+		margin: 0 auto;
+	}
+	
+	.exemple{
+		width: 70%;
+		margin: 0 auto;
+	}
+}
+@media screen and (min-width: 1590px){
+	#slider{
+		background-size: cover;
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+	}
+}
